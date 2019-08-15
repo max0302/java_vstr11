@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>form validation</title>
+</head>
+
+<body>
+    <form action="post" name="msg-sender-form" class="msg-sender-form">
+        <div class="input-field-wrap">
+            <label>От кого</label><br>
+            <input type="text" name="msgFrom" class="input-normal-border">
+            <span class="error-msg" id="name-required">Укажите имя</span>
+        </div>
+
+        <div class="input-field-wrap">
+            <label>Пароль</label><br>
+            <input type="password" name="password" class="input-normal-border">
+            <span class="error-msg" id="pass-required">Укажите пароль</span>
+        </div>
+
+        <div class="input-field-wrap">
+            <label>Повторите пароль</label><br>
+            <input type="password" name="repassword" class="input-normal-border">
+            <span class="error-msg" id="repass-required">Пароли не совпадают</span>
+        </div>
+
+        <label>Куда</label>
+        <select name="msgDest" id="" class="dest-select">
+            <option value="Отдел снабжения" class="input-normal-border">Отдел 1</option>
+            <option value="Отдел энергообеспечения">Отдел 2</option>
+            <option value="Отдел еще какой-то">Отдел 3</option>
+        </select>
+
+        <label>Сообщение:</label>
+        <textarea name="msgBody" cols="40" rows="6" class="input-normal-border"></textarea>
+        <span class="error-msg" id="msg-body-required">Отсутствует текст</span>
+
+        <input type="submit" name="formCheckBtn" value="Проверить" class="form-check-btn">
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

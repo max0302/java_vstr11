@@ -1,0 +1,22 @@
+body {
+	background: white;
+	font-family: 'Arial', sans-serif;
+	display: flex;
+}
+
+.msg-sender-form {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-red-border {
+    border: 2px solid red;
+}
+
+.error-msg {
+    color: red;
+    font-weight: bold;
+    visibility: hidden;
+}
